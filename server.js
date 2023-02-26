@@ -106,5 +106,3 @@ app.post("/notice", (req, res) => {
 app.listen(port, () => {
     console.log(`listening to port ${port}`);
 })
-
-exports.app = functions.https.onRequest(app);
