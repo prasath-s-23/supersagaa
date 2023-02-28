@@ -26,7 +26,6 @@ app.get("/notice", (req, res) => {
 })
 app.post("/notice", (req, res) => {
     let data = req.body;
-    res.send("hello")
     console.log(req.body);
 
 
@@ -94,9 +93,13 @@ app.post("/notice", (req, res) => {
     transporter.sendMail(options, (err, res) => {
             if (err) {
                 console.log(err);
+    res.send("hello")
+                
 
             } else {
                 console.log("funn");
+    res.send("ttello")
+                
             }
         })
         // transporter.sendMail(options1)
